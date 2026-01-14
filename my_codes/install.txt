@@ -1,0 +1,14 @@
+conda create -n llama_factory python=3.10
+conda activate llama_factory
+
+
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+
+
+pip install -e ".[torch,metrics]"
+
+
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+
+
